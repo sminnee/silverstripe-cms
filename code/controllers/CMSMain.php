@@ -443,6 +443,22 @@ class CMSMain extends LeftAndMain implements CurrentPageIdentifier, PermissionPr
 
 		if(!$fields) $fields = $form->Fields();
 		$actions = $form->Actions();
+		
+		// Look for SS2-style nested tabs, correct, and throw Deprecation notices
+		$root = $fields->fieldByName('Root');
+		
+		foreach($root->getChildren() as $field) {
+			if($field instanceof TabSet) {
+				Deprecation::notice("2.5", "Don't create nest tabsets such as '" . $field->Name() . "' in your getCMSFields() methods anymore");
+				foreach($field->getChildren() as $childTab) {
+					$childTabName = $childTab->Name();
+					foreach($childTab->getChildren() as $childField) {
+						$fields->addFieldToTab("Root.$childTabName", $childField);
+					}
+				}	
+				$root->removeByName($field->Name());
+			}
+		}
 
 		if($record) {
 			$deletedFromStage = $record->IsDeletedFromStage;
