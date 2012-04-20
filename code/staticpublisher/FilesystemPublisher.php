@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Usage: Object::add_extension("SiteTree", "FilesystemPublisher('static-folder', 'html')");
  * 

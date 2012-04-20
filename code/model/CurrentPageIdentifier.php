@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * This interface lets us set up objects that will tell us what the current page is.
  * @package cms

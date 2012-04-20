@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Used to edit the SiteTree->URLSegment property, and suggest input based on the serverside rules
  * defined through {@link SiteTree->generateURLSegment()} and {@link URLSegmentFilter}.

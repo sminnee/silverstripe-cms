@@ -1,4 +1,9 @@
 <?php
+
+use SilverStripe\Framework\Control\RequestHanlder;
+use SilverStripe\Framework\Control\SS_HTTPResponse;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * ModelAsController deals with mapping the initial request to the first {@link SiteTree}/{@link ContentController}
  * pair, which are then used to handle the request.

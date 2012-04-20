@@ -1,4 +1,9 @@
 <?php
+
+use SilverStripe\Framework\Dev\TestOnly;
+use SilverStripe\Framework\Forms\FieldList;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * @package cms
  * @subpackage tests

@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Framework\Model\DataObject;
+
 class VirtualPageTest extends SapphireTest {
 	static $fixture_file = 'VirtualPageTest.yml';
 	

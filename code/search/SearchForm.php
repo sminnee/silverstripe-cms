@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Standard basic search form which conducts a fulltext search on all {@link SiteTree}
  * objects. 

@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Framework\Forms\HiddenField;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Base "abstract" class creating reports on your data.
  * 

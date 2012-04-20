@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Identify "orphaned" pages which point to a parent
  * that no longer exists in a specific stage.

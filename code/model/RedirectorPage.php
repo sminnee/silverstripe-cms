@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * A redirector page redirects when the page is visited.
  *

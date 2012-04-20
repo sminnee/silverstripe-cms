@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * ErrorPage holds the content for the page of an error response.
  * Renders the page on each publish action into a static HTML file

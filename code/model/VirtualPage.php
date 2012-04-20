@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
 * Virtual Page creates an instance of a  page, with the same fields that the original page had, but readonly.
 * This allows you can have a page in mulitple places in the site structure, with different children without duplicating the content
@@ -216,7 +219,7 @@ class VirtualPage extends Page {
 
 		// Determine if we need to copy values.
 		if(
-			$this->extension_instances['Versioned']->migratingVersion
+			$this->getExtensionInstance('Versioned')->migratingVersion
 			&& Versioned::current_stage() == 'Live'
 			&& $this->CopyContentFromID
 		) {
@@ -251,7 +254,7 @@ class VirtualPage extends Page {
 		parent::onAfterWrite();
 
 		// Don't do this stuff when we're publishing
-		if(!$this->extension_instances['Versioned']->migratingVersion) {
+		if(!$this->getExtensionInstance('Versioned')->migratingVersion) {
 	 		if(
 				$this->isChanged('CopyContentFromID')
 	 			&& $this->CopyContentFromID != 0 

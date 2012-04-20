@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Renderer for showing SideReports in CMSMain
  * 

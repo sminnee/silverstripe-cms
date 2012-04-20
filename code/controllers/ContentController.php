@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+use SilverStripe\Framework\Model\DataModel;
+
 /**
  * The most common kind of controller; effectively a controller linked to a {@link DataObject}.
  *

@@ -1,4 +1,10 @@
 <?php
+
+use SilverStripe\Framework\Security\Member;
+use SilverStripe\Framework\Control\Controller;
+use SilverStripe\Framework\Core\HiddenClass;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Basic data-object representing all pages within the site tree.
  * This data-object takes care of the heirachy. All page types that live within the hierarchy should inherit from this.

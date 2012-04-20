@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * @package cms
  */

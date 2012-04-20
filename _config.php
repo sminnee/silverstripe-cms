@@ -1,5 +1,10 @@
 <?php
 
+use SilverStripe\Framework\Core\Object;
+//use SilverStripe\Framework\Parsers\ShortcodeParser;
+use SilverStripe\Framework\Control\Director;
+use SilverStripe\Framework\Admin\CMSMenu;
+
 /**
  * - CMS_DIR: Path relative to webroot, e.g. "cms"
  * - CMS_PATH: Absolute filepath, e.g. "/var/www/my-webroot/cms"

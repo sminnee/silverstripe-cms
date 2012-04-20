@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Utility class representing links to different views of a record
  * for CMS authors, usually for {@link SiteTree} objects with "stage" and "live" links.
@@ -23,8 +26,8 @@ class SilverStripeNavigator extends ViewableData {
 	 * @param DataObject
 	 */
 	function __construct($record) {
-		if(!in_array('CMSPreviewable', class_implements($record))) {
-			throw new InvalidArgumentException('SilverStripeNavigator: Record of type %s doesn\'t implement CMSPreviewable', get_class($record));
+		if(!in_array('SilverStripe\Framework\Admin\CMSPreviewable', class_implements($record))) {
+			throw new InvalidArgumentException('SilverStripeNavigator: Record of type '.get_class($record).' doesn\'t implement CMSPreviewable.');
 		}
 		
 		$this->record = $record;

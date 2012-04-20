@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Tests for the {@link FilesystemPublisher} class.
  * 

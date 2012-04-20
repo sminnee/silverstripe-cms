@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 class CMSFileAddController extends LeftAndMain {
 
 	static $url_segment = 'assets/add';

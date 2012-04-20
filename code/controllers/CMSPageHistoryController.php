@@ -1,5 +1,8 @@
 <?php
 
+use SilverStripe\Framework\Forms\Form;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * @package cms
  * @subpackage controllers

@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * Rewrites plain internal HTML links into shortcode form, using existing link tracking information.
  *

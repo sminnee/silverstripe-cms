@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Framework\Core\HiddenClass;
+use SilverStripe\Framework\Model\DataObject;
+
 /**
  * The main "content" area of the CMS.
  *
