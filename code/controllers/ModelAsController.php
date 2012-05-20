@@ -1,6 +1,6 @@
 <?php
 
-use SilverStripe\Framework\Control\RequestHanlder;
+use SilverStripe\Framework\Control\RequestHandler;
 use SilverStripe\Framework\Control\SS_HTTPResponse;
 use SilverStripe\Framework\Model\DataObject;
 

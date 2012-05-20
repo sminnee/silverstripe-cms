@@ -1,5 +1,6 @@
 <?php
 
+use SilverStripe\Framework\Control;
 use SilverStripe\Framework\Model\DataObject;
 use SilverStripe\Framework\Model\DataModel;
 
@@ -22,7 +23,7 @@ use SilverStripe\Framework\Model\DataModel;
  * @package cms
  * @subpackage control
  */
-class ContentController extends Controller {
+class ContentController extends Control\Controller {
 
 	protected $dataRecord;
 

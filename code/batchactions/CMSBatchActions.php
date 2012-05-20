@@ -1,4 +1,7 @@
 <?php
+
+use SilverStripe\Framework\Model\SS_List;
+
 /**
  * Publish items batch action.
  * 

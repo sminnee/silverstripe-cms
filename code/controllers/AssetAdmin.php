@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\Framework\Model\DataObject;
+use SilverStripe\Framework\Model\SS_List;
 
 /**
  * AssetAdmin is the 'file store' section of the CMS.
